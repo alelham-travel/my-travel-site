@@ -1,52 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="style.css">
     <title>Services - Al-Elham Travel</title>
-    <style>
-        body {
-            background-color: #0b2ab3;
-            color: #FFD700;
-            font-family: sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 50px;
-        }
-        .service-card {
-            background: rgba(255, 215, 0, 0.1);
-            border: 2px solid #FFD700;
-            border-radius: 15px;
-            padding: 20px;
-            margin: 10px;
-            width: 300px;
-            text-align: center;
-        }
-        a { color: #FFD700; font-weight: bold; text-decoration: none; }
-        
-        .video-gallery iframe {
-            border: 3px solid #FFD700;
-            border-radius: 15px;
-            box-shadow: 0px 4px 20px rgba(0,0,0,0.6);
-            max-width: 100%;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+    <nav class="navbar">
+        <a href="destinations.html">Destinations</a>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="https://www.youtube.com/@EverythingSharing.2026" target="_blank">YouTube</a>
+        <a href="https://www.facebook.com/AlElhamTravel" target="_blank">Facebook</a>
+        <a href="index.html#contact">Contact</a>
+    </nav>
+
+    <!-- Inside the container of services.html -->
+<div class="container">
     <h1>Our Premium Services</h1>
     
-    <div class="service-card">
-        <h2>Flight Booking</h2>
-        <p>Luxury travel at affordable rates.</p>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+        <div class="service-card">
+            <h3>✈️ Flight Booking</h3>
+            <p>Luxury travel at affordable rates for domestic and international flights.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>🛂 Visa Assistance</h3>
+            <p>Hassle-free processing for your next business or leisure trip.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>🏨 Hotel Reservation</h3>
+            <p>Book premium stays at the best locations worldwide.</p>
+        </div>
     </div>
 
-    <div class="service-card">
-        <h2>Visa Assistance</h2>
-        <p>Hassle-free processing for your next trip.</p>
-    </div>
-
-    <div class="video-gallery" style="margin-top: 50px; text-align: center;">
+    <div class="video-gallery" style="margin-top: 50px;">
         <h2>Featured Content from Everything Sharing</h2>
-        <!-- Embedded your specific YouTube Short -->
         <iframe width="315" height="560" 
             src="https://www.youtube.com/embed/AuTzfRfnK3Q" 
             title="YouTube video player" 
@@ -56,7 +47,25 @@
         </iframe>
     </div>
 
-    <br>
-    <a href="index.html">← Back to Home</a>
+    <!-- Navigation and Contact Links -->
+    <div style="margin-top: 30px;">
+        <a href="index.html" class="back-link">← Back to Home</a>
+        <br><br>
+        <a href="https://wa.me/93779733730" target="_blank" class="whatsapp-btn">
+            Chat on WhatsApp
+        </a>
+    </div>
+</div>
+
+    <!-- Adding the Footer here too for consistency -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Al-Elham Travel & Tour. All rights reserved.</p>
+            <div class="footer-socials">
+                <a href="https://www.facebook.com/AlElhamTravel" target="_blank">FB</a> | 
+                <a href="https://www.youtube.com/@EverythingSharing" target="_blank">YT</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
